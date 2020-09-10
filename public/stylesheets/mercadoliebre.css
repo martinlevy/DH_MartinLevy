@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+
+header{
+background-color:  #EAC926;
+padding: 10px;
+}
+header div.logoybuscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+header div.logo{
+    width: 100px;
+    display: inline-block;
+    margin: 0 10px
+}
+header div.buscador {
+    display: block;
+    margin: 0px;    
+}
+header div.buscador{
+    position: relative;
+}
+header div.buscador input{
+    padding: 10px;
+    margin: 10px 15px;
+    font-size: 12px;  
+/*cambie el width a 90 y el margin de lados a 20 para q quede como el video*/   
+    border-radius: 5px;
+    border: 0px;
+}
+/*Le puse una posicion relative al padre para poder fijar bien la lupa con absolute*/   
+i.fa-search{
+position: absolute;
+top: 20px;
+right: 16px;
+color: rgb(157, 157, 157);
+}
+header div.encabezados{
+    padding: 0px;
+    margin: 0px;
+}
+header div.encabezados p{
+    color:  black;
+    font-size: 12px;
+    text-align: center;
+}
+
+header nav.barraNavegacion{
+    display: none;
+    font-size: 12px;
+}
+header nav ul li { 
+    list-style: none;
+
+}   
+a{
+    text-decoration: none;
+    color: black;   
+}
+     
+header div.botonMenu{
+    text-align: center;
+}
+header div.botonMenu button{
+    background-color: #0044AA;
+    height: 40px;
+    width: 40px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+header div.botonMenu button:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+section .banner{
+    display: block;
+    width: 100%;
+}
+/*iconos header*/
+i.fa-hand-holding-usd{
+    color:black;
+}
+i.fa-address-card{
+    color: black;
+}
+i.fa-sign-in-alt{
+    color: black;
+}
+i.fa-shopping-basket{
+    color: black
+}
+/*main*/
+
+main section{
+    margin: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+main section.secciones h2 {
+    margin: 20px 0;
+    width: 90%;
+    text-align: center;
+    background-color:#ebebeb;
+    color: #666;
+    font-size: 24px;
+}
+
+main article{
+    margin-bottom: 20px;
+    background-color: white;
+    width: 280px;
+}
+
+main article div.tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    padding: 20px 0;
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+main article div.bordeado{
+    border-top: 2px solid #ebebeb;
+
+}
+img{
+    width: 100%;
+}
+
+main article  h3.productos{
+    color:  #666;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: none;
+
+}
+
+
+main article p{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+
+}
+article div.tarjeta p.precio{
+    color: black;
+    font-size: 18px;
+    margin-right: 0;
+    padding-right: 0;
+    width: 75px;
+    text-align: left;
+    margin-left: 0px;
+}
+article p.descuento{
+    color: #39b54a;
+    font-size: 16px;
+    margin: 0 ;
+    padding: 0;
+    width: 130px;
+}
+/*Le puse una posicion relative al padre para poder fijar bien la lupa con absolute y
+un border radius para redondearlo*/   
+i.fa-truck {
+    color:#39b54a;
+    border: 1px solid #39b54a;
+    background-color: white;
+    border-radius: 100%;
+    padding: 4px;
+    position: relative;
+    bottom: 34px;
+    left: 220px;
+        
+}
+/* footer*/
+
+footer{
+    padding: 20px 5%;
+    background-color: white;
+    text-align: center;
+}
+footer article{
+    margin-bottom: 20px;
+}
+footer article h3{
+margin: 0;
+}
+footer article p{
+    color:  #666;
+    font-size: 12px;
+    margin: 0px
+}
+footer div.copyright {
+    color:  #666;
+    font-size: 12px;
+    text-align: center;
+}
+/*iconos footeer*/
+i.fa-credit-card{
+    color:  #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+i.fa-gift{
+    color:  #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+i.fa-user-shield{
+    color:  #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* responsive para tablet*/
+@media (min-width:361px){
+    header div.logoybuscador{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header nav.barraNavegacion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 40%;
+        padding: 0px;
+    }
+    header div.logo{
+        width: 130px;
+    }
+
+    header div.buscador input{
+        width: 300px;
+    }
+
+    
+    main section.secciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        
+    }
+    main section.secciones article{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+    main section article div.tarjeta{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header div.botonMenu{
+        display: none;
+    }     
+
+ }
+ /* responsive para computadora*/
+ @media (min-width:769px){
+     
+
+    header div.buscador input{
+        width: 700px;
+    }
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    
+    main section article:hover h3 {
+        display: block;
+
+    }
+    main section article:hover i {
+        transform: rotateZ(-90deg);
+        transition: 1s;
+
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer article{
+        width: 350px;
+    }
+    footer div.copyright{
+        text-align: center;
+    }
+ }

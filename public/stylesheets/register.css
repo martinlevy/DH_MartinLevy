@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+
+header{
+background-color:  #EAC926;
+padding: 10px;
+}
+header div.logoybuscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+header div.logo{
+    width: 100px;
+    display: inline-block;
+    margin: 0 10px
+}
+header div.buscador {
+    display: block;
+    margin: 0px;    
+}
+header div.buscador{
+    position: relative;
+}
+header div.buscador input{
+    padding: 10px;
+    margin: 10px 15px;
+    font-size: 12px;  
+/*cambie el width a 90 y el margin de lados a 20 para q quede como el video*/   
+    border-radius: 5px;
+    border: 0px;
+}
+/*Le puse una posicion relative al padre para poder fijar bien la lupa con absolute*/   
+i.fa-search{
+position: absolute;
+top: 20px;
+right: 16px;
+color: rgb(157, 157, 157);
+}
+header div.encabezados{
+    padding: 0px;
+    margin: 0px;
+}
+header div.encabezados p{
+    color:  black;
+    font-size: 12px;
+    text-align: center;
+}
+
+header nav.barraNavegacion{
+    display: none;
+    font-size: 12px;
+}
+header nav ul li { 
+    list-style: none;
+
+}   
+a{
+    text-decoration: none;
+    color: black;   
+}
+     
+header div.botonMenu{
+    text-align: center;
+}
+header div.botonMenu button{
+    background-color: #0044AA;
+    height: 40px;
+    width: 40px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+header div.botonMenu button:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+section .banner{
+    display: block;
+    width: 100%;
+}
+/*iconos header*/
+i.fa-hand-holding-usd{
+    color:black;
+}
+i.fa-address-card{
+    color: black;
+}
+i.fa-sign-in-alt{
+    color: black;
+}
+i.fa-shopping-basket{
+    color: black
+}
+/*main*/
+main form input{
+    width: 90%;
+    padding: 10px;
+/*cambie el width a 90 y el margin de lados a 20 para q quede como el video*/
+    margin: 20px  20px;
+    border-radius: 5px;
+    border: 0px;
+}
+main form input.radio{
+    width: 5%;
+    margin-right: 5px;
+}
+main form label.radio{
+    padding-left:  10px;
+}
+main form input.checkbox{
+    width: 10%;
+    margin-right: 5px;
+}
+main form label.checkbox{
+    padding-left:  0px;
+}
+
+main form label{
+    padding: 20px;
+
+}
+main form h3{
+    font-weight: bold;
+}
+main form button.submit{
+    color: white;
+    background-color: #0044AA;width: 90%;
+    padding: 10px;
+/*cambie el width a 90 y el margin de lados a 20 para q quede como el video*/
+    margin: 20px  20px;
+    border-radius: 5px;
+    border: 0px;
+}
+main form button.submit:hover{
+    background-color:  #0022AA;
+    cursor: pointer;
+}
+main form button.reset{
+    color: white;
+    background-color: #AA0044;
+    width: 90%;
+    padding: 10px;
+/*cambie el width a 90 y el margin de lados a 20 para q quede como el video*/
+    margin: 20px  20px;
+    border-radius: 5px;
+    border: 0px;
+}
+main form button.reset:hover{
+    background-color: #CC1155;
+    cursor: pointer;
+}
+/* footer*/
+
+footer{
+    padding: 20px 5%;
+    background-color: white;
+    text-align: center;
+}
+footer article{
+    margin-bottom: 20px;
+}
+footer article h3{
+margin: 0;
+}
+footer article p{
+    color:  #666;
+    font-size: 12px;
+    margin: 0px
+}
+footer div.copyright {
+    color:  #666;
+    font-size: 12px;
+    text-align: center;
+}
+/*iconos footeer*/
+i.fa-credit-card{
+    color:  #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+i.fa-gift{
+    color:  #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+i.fa-user-shield{
+    color:  #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* responsive para tablet*/
+@media (min-width:361px){
+    header div.logoybuscador{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header nav.barraNavegacion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 40%;
+        padding: 0px;
+    }
+    header div.logo{
+        width: 130px;
+    }
+
+    header div.buscador input{
+        width: 300px;
+    }
+
+
+    header div.botonMenu{
+        display: none;
+    }     
+
+ }
+ /* responsive para computadora*/
+ @media (min-width:769px){
+     
+
+    header div.buscador input{
+        width: 700px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer article{
+        width: 350px;
+    }
+    footer div.copyright{
+        text-align: center;
+    }
+ }
